@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import sys,simplejson,urllib,urllib2,logging
+import simplejson
+import urllib
+import urllib2
+
 
 class Lingr(object):
 
@@ -100,8 +103,10 @@ class Lingr(object):
                     yield event
                     
 # こっから Ubuntu 用の実装
-import os, yaml, tempfile, pynotify
+import os
+import pynotify
 from pit import Pit
+
 def get_img(url):
     BASE_DIR = os.path.expanduser('~/.lingr')
     if not os.path.exists(BASE_DIR):
