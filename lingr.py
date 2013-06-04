@@ -91,7 +91,7 @@ class Lingr(object):
     def get_opener(self):
         opener = urllib2.build_opener()
         opener.addheaders = [
-            ('User-agent', 'python lingr(http://d.hatena.ne.jp/jYoshiori/)')
+            ('User-agent', 'lingrpy(https://github.com/narusemotoki/lingrpy)')
         ]
         return opener
 
